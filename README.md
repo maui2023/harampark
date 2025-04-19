@@ -21,6 +21,14 @@ This project is designed to allow users to upload pictures and tag locations usi
 - **Authentication**: Google OAuth
 - **Maps**: Google Maps API
 
+### Project Structure
+
+1. **Backend**: Node.js with Express.js for handling API requests and interactions with the database.
+2. **Database**: MariaDB for storing user data, uploaded images, tags, confirmations, and user roles.
+3. **Frontend**: Bootstrap for responsive design, suitable for both desktop and mobile.
+4. **Authentication**: Google OAuth for user registration and login.
+5. **Google Maps API**: For tagging locations on uploaded images.
+
 ## Setup
 
 ### Prerequisites
@@ -33,4 +41,45 @@ This project is designed to allow users to upload pictures and tag locations usi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/user/harampark.git# harampark
+   git clone https://github.com/user/harampark.git
+   ```
+
+2. Install dependencies:
+   ```bash
+   cd harampark
+   npm install
+   ```
+
+3. Set up the database:
+   - Create a MariaDB database and user.
+   - Import the provided SQL schema.
+
+4. Configure environment variables:
+   - Create a `.env` file with your Google OAuth credentials and database connection details.
+
+5. Start the server:
+   ```bash
+   npm start
+   ```
+
+## Usage
+
+- Access the application at `http://localhost:3000`.
+- Register using Google OAuth.
+- Upload images and tag locations.
+- Confirm or deny illegal temple classifications.
+
+## Contributing
+
+Please submit pull requests for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License.
+```
+
+### Suggestions
+
+- **Security**: Ensure secure handling of user data and uploaded files.
+- **Scalability**: Consider using cloud services for hosting and database management.
+- **Testing**: Implement unit and integration tests for reliability.# harampark
